@@ -12,7 +12,8 @@ class player(Sprite):
         self.rect = self.image.get_rect()
         # could load these constant seeting in a file
 
-        self.rect.center = SCREEN_SIZE[0]/2, SCREEN_SIZE[1]/2
+        self.rect.centerx = SCREEN_SIZE[0]/2
+        self.rect.bottom = SCREEN_SIZE[1]-10
         self.speed_x = 8
     
     # update the detail of image per frame

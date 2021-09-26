@@ -1,5 +1,6 @@
 import pygame
 import player as p
+import rock as r
 
 # principle of game:
 # loop : process input -> update game -> render
@@ -22,6 +23,9 @@ def create_sprites_group():
     all_sprites = pygame.sprite.Group()
     player = p.player()
     all_sprites.add(player)
+    for i in range(8):
+        rock = r.rock()
+        all_sprites.add(rock)
 
     return all_sprites
 
